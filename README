@@ -1,0 +1,37 @@
+
+###############################################################################
+##########################	1.0 version	#################################
+###############################################################################
+query($Type, $TableName, $ForWhile, $Where)
+$Type 
+ - "S" SELECT
+ - "D" DELETE
+ - "U" UPADTE
+ - "I" INSERT
+ - "CNT" SQL ALL ROW
+ - "!any value" To get sum
+$TableName
+ - The name on your table like to use
+$ForWhile
+ - is a boolean true or false
+ = true - back query
+ = False - back mysqli_fetch_assoc
+$Where
+ - conditions on selections
+
+###############################################################################
+protectValue($Type, $Value) - post and get value with (trim, htmlspecialchars, mysqli_real_escape_string)
+$Type
+ = "GET" 
+ = "POST"
+ = "Only" - Get only protect value
+
+
+###############################################################################
+Whiling($TableName, $Where, $FileData) - Get while date on db.
+$TableName
+ - The name on your table like to use
+$Where
+ - conditions on selections
+$FileData
+ - File containing values for while
